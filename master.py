@@ -5,7 +5,7 @@ import os
 from master import masterdl
 
 @bot.on_message(filters.command("r"))
-async def account_login(bot, m):
+async def account_login(bot: Client, m: Message):
     try:
         Credit = Config.CREDIT
         editable = await m.reply_text('__Send 🗂️Master TXT🗂️ file for download__')
